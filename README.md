@@ -2,8 +2,8 @@
 
 ## CONTENTS
 
- - [Core Features & Benefits]
- - [Submodule Overview]
+ - [Core Features & Benefits](#core-features--benefits)
+ - [Submodule Overview](#submodule-overview)
  - [Configuration](#configuration)
  
 ### CORE FEATURES & BENEFITS
@@ -34,6 +34,6 @@ to a PHP Library soon. This is under development.
 The content entities of Drupal can be used as inventories using this module.
 This is under development.
 
-### CONFIGURATION {#configuration}
+### CONFIGURATION
 
 Settings page is located at: `/admin/config/services/liftigniter`.
