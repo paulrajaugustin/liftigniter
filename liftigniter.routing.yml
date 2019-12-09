@@ -1,0 +1,14 @@
+liftigniter.admin_config:
+  path: '/admin/config/services/liftigniter'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Liftigniter'
+  requirements:
+    _permission: 'access administration pages'
+liftigniter.settings:
+  path: '/admin/config/services/liftigniter/settings'
+  defaults:
+    _form: '\Drupal\liftigniter\Form\LiftigniterSettingsForm'
+    _title: 'Liftigniter Settings'
+  requirements:
+    _permission: 'administer site configuration'

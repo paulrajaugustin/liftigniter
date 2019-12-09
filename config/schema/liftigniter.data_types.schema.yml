@@ -1,0 +1,17 @@
+# Mail text with subject and body parts.
+track:
+  type: mapping
+  label: 'Track'
+  mapping:
+    enable:
+      type: boolean
+      label: 'Enable'
+    selector:
+      type: text
+      label: 'Seclector'
+    method:
+      type: text
+      label: 'Method'
+    debug:
+      type: boolean
+      label: 'Enable'

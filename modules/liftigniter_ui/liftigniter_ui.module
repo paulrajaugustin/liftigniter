@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * @file
+ * Integrates LiftIgniter in Drupal.
+ */
+
+/**
+ * Implements hook_entity_type_build().
+ */
+function liftigniter_ui_entity_type_build(array &$entity_types) {
+  /** @var $entity_types \Drupal\Core\Entity\EntityTypeInterface[] */
+  $entity_types['widget']
+    ->setFormClass('edit', 'Drupal\liftigniter_ui\Form\WidgetForm')
+    ->setFormClass('add', 'Drupal\liftigniter_ui\Form\WidgetForm')
+    ->setFormClass('delete', 'Drupal\liftigniter_ui\Form\WidgetDeleteForm')
+    ->setListBuilderClass('Drupal\liftigniter_ui\WidgetListBuilder')
+    ->setLinkTemplate('edit-form', '/admin/config/services/liftigniter/{widget}/edit')
+    ->setLinkTemplate('delete-form', '/admin/config/services/liftigniter/{widget}/delete');
+  $entity_types['template']
+    ->setFormClass('edit', 'Drupal\liftigniter_ui\Form\TemplateForm')
+    ->setFormClass('add', 'Drupal\liftigniter_ui\Form\TemplateForm')
+    ->setFormClass('delete', 'Drupal\liftigniter_ui\Form\TemplateDeleteForm')
+    ->setListBuilderClass('Drupal\liftigniter_ui\TemplateListBuilder')
+    ->setLinkTemplate('edit-form', '/admin/config/services/liftigniter/{template}/edit')
+    ->setLinkTemplate('delete-form', '/admin/config/services/liftigniter/{template}/delete');
+}

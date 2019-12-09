@@ -1,0 +1,7 @@
+liftigniter:
+  version: 0.1
+  js:
+    js/liftigniter.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings

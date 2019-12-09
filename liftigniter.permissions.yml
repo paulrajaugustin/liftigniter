@@ -1,0 +1,4 @@
+administer liftigniter:
+  title: 'Administer Liftigniter'
+  description: 'Administer Liftigniter.'
+  restrict access: true

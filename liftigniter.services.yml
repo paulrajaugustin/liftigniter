@@ -1,0 +1,13 @@
+services:
+  logger.channel.liftigniter:
+    parent: logger.channel_base
+    arguments: ['liftigniter']
+  liftigniter.api:
+    class: Drupal\liftigniter\LiftigniterApi
+    arguments: ['@http_client_factory', '@config.factory', '@logger.channel.liftigniter']
+  liftigniter.api.inventory:
+    class: Drupal\liftigniter\LiftigniterInventory
+    arguments: ['@liftigniter.api', '@messenger']
+  liftigniter.api.user:
+    class: Drupal\liftigniter\LiftigniterUser
+    arguments: ['@liftigniter.api', '@messenger']

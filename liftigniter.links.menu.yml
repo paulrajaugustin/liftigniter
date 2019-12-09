@@ -1,0 +1,12 @@
+liftigniter.admin_config:
+  title: 'Liftigniter'
+  route_name: liftigniter.admin_config
+  parent: system.admin_config_services
+  description: 'Liftigniter settings.'
+  weight: -20
+
+liftigniter.settings:
+  title: 'Settings'
+  route_name: liftigniter.settings
+  parent: liftigniter.admin_config
+  description: 'Configure Liftigniter settings.'

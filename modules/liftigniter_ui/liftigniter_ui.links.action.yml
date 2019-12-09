@@ -1,0 +1,10 @@
+entity.widget.add_form:
+  route_name: 'entity.widget.add_form'
+  title: 'Add Widget'
+  appears_on:
+    - entity.widget.list
+entity.template.add_form:
+  route_name: 'entity.template.add_form'
+  title: 'Add Template'
+  appears_on:
+    - entity.template.list

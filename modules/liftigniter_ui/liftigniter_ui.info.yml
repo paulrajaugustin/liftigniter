@@ -1,0 +1,8 @@
+name: LiftIgniter UI
+type: module
+description: 'Administrative interface for LiftIgniter.'
+package: LiftIgniter
+version: 8.1.1
+core: 8.x
+dependencies:
+  - liftigniter:liftigniter

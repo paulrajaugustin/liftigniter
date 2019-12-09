@@ -1,0 +1,8 @@
+# Define the 'local' links for the module
+
+liftigniter.settings:
+  title: 'Settings'
+  description: 'Settings for Liftigniter'
+  base_route: liftigniter.settings
+  route_name: liftigniter.settings
+  weight: 1

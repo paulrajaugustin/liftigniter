@@ -1,0 +1,87 @@
+# Schema for the configuration files of the Liftigniter module.
+
+liftigniter.widget.*:
+  type: config_entity
+  label: 'Widget'
+  mapping:
+    id:
+      type: string
+      label: 'Widget identifier'
+    uuid:
+      type: string
+      label: 'UUID'
+    label:
+      type: label
+      label: 'Name'
+    widget:
+      type: string
+      label: 'Widget'
+    selector:
+      type: string
+      label: 'Selector'
+    no_of_items:
+      type: string
+      label: 'No of items'
+    max:
+      type: integer
+      label: 'Max'
+    opts:
+      type: text
+      label: 'Custom Options'
+    ab_testing:
+      type: mapping
+      label: 'AB Testing'
+      mapping:
+        enable:
+          type: boolean
+          label: 'Enable AB Testing'
+        slice:
+          type: integer
+          label: 'Slice value of AB Testing'
+    renderer:
+      type: mapping
+      label: 'Render Settings'
+      mapping:
+        method:
+          type: string
+          label: 'Rendering Method'
+        selector:
+          type: string
+          label: 'Selector for rendering'
+        template:
+          type: string
+          label: 'Template for rendering'
+    track:
+      type: mapping
+      label: 'Tracking'
+      mapping:
+        li:
+          type: track
+          label: 'LI Tracking'
+        base:
+          type: track
+          label: 'Base Tracking'
+    status:
+      type: boolean
+      label: 'Status'
+
+liftigniter.template.*:
+  type: config_entity
+  label: 'Template'
+  mapping:
+    id:
+      type: string
+      label: 'Template identifier'
+    uuid:
+      type: string
+      label: 'UUID'
+    label:
+      type: label
+      label: 'Name'
+    twig:
+      type: text
+      label: 'Twig'
+      translatable: false
+    status:
+      type: boolean
+      label: 'Status'

@@ -1,0 +1,7 @@
+name: LiftIgniter
+type: module
+description: 'Integrates LiftIgniter.'
+package: LiftIgniter
+version: 8.1.1
+core: 8.x
+configure: liftigniter.admin_config
