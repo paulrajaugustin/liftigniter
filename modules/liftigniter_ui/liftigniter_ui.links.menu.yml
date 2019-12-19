@@ -1,11 +1,3 @@
-entity.widget.list:
-  title: 'Widget'
-  route_name: entity.widget.list
-  parent: liftigniter.admin_config
-  description: 'Manage Widget.'
-
-entity.template.list:
-  title: 'Template'
-  route_name: entity.template.list
-  parent: liftigniter.admin_config
-  description: 'Manage Template.'
+liftigniter_ui.menu_links:
+  deriver: 'Drupal\liftigniter_ui\Plugin\Derivative\LiftigniterMenuLinks'
+  weight: 1

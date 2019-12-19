@@ -10,3 +10,4 @@ liftigniter.settings:
   route_name: liftigniter.settings
   parent: liftigniter.admin_config
   description: 'Configure Liftigniter settings.'
+  weight: -1

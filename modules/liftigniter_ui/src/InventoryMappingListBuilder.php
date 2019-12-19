@@ -6,9 +6,9 @@ use Drupal\Core\Config\Entity\ConfigEntityListBuilder;
 use Drupal\Core\Entity\EntityInterface;
 
 /**
- * Provides a listing of Template entities.
+ * Provides a listing of Inventory Mapping entities.
  */
-class TemplateListBuilder extends ConfigEntityListBuilder {
+class InventoryMappingListBuilder extends ConfigEntityListBuilder {
 
   /**
    * {@inheritdoc}
@@ -19,7 +19,7 @@ class TemplateListBuilder extends ConfigEntityListBuilder {
    * {@inheritdoc}
    */
   public function getFormId() {
-    return 'template_list';
+    return 'inventory_mapping_list';
   }
 
   /**
@@ -47,8 +47,8 @@ class TemplateListBuilder extends ConfigEntityListBuilder {
    */
   public function render() {
     $build = parent::render();
-    $build['#title'] = $this->t('Templates');
-    $build['#empty'] = $this->t('No Template available.');
+    $build['#title'] = $this->t('Inventory Mapping');
+    $build['#empty'] = $this->t('No Inventory Mapping available.');
     return $build;
   }
 

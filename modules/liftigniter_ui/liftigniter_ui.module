@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Integrates LiftIgniter in Drupal.
+ * User Interace for LiftIgniter.
  */
 
 /**
@@ -22,6 +22,15 @@ function liftigniter_ui_entity_type_build(array &$entity_types) {
     ->setFormClass('add', 'Drupal\liftigniter_ui\Form\TemplateForm')
     ->setFormClass('delete', 'Drupal\liftigniter_ui\Form\TemplateDeleteForm')
     ->setListBuilderClass('Drupal\liftigniter_ui\TemplateListBuilder')
-    ->setLinkTemplate('edit-form', '/admin/config/services/liftigniter/{template}/edit')
-    ->setLinkTemplate('delete-form', '/admin/config/services/liftigniter/{template}/delete');
+    ->setLinkTemplate('edit-form', '/admin/config/services/liftigniter/template/{template}/edit')
+    ->setLinkTemplate('delete-form', '/admin/config/services/liftigniter/template/{template}/delete');
+  if (\Drupal::moduleHandler()->moduleExists('liftigniter_inventory')) {
+    $entity_types['inventory_mapping']
+      ->setFormClass('edit', 'Drupal\liftigniter_ui\Form\InventoryMappingForm')
+      ->setFormClass('add', 'Drupal\liftigniter_ui\Form\InventoryMappingForm')
+      ->setFormClass('delete', 'Drupal\liftigniter_ui\Form\InventoryMappingDeleteForm')
+      ->setListBuilderClass('Drupal\liftigniter_ui\InventoryMappingListBuilder')
+      ->setLinkTemplate('edit-form', '/admin/config/services/liftigniter/inventory-mapping/{inventory_mapping}/edit')
+      ->setLinkTemplate('delete-form', '/admin/config/services/liftigniter/inventory-mapping/{inventory_mapping}/delete');
+  }
 }

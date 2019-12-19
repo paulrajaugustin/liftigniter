@@ -1,0 +1,4 @@
+services:
+  liftigniter_ui.routes:
+    class: Drupal\liftigniter_ui\Routing\LiftigniterRoutes
+    arguments: ['@entity_type.manager']

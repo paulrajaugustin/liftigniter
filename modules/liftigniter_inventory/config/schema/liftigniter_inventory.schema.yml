@@ -1,0 +1,27 @@
+# Schema of the Liftigniter Inventory Mapping module.
+
+liftigniter_inventory.inventory_mapping.*:
+  type: config_entity
+  label: 'Inventory Mapping'
+  mapping:
+    id:
+      type: string
+      label: 'Inventory Mapping identifier'
+    uuid:
+      type: string
+      label: 'UUID'
+    label:
+      type: label
+      label: 'Name'
+    entity_type:
+      type: string
+      label: 'Entity type'
+    entity_bundle:
+      type: string
+      label: 'Entity Bundle'
+    mapping:
+      type: text
+      label: 'Mapping'
+    status:
+      type: boolean
+      label: 'Status'

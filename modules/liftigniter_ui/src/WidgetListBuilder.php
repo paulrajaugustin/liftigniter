@@ -47,6 +47,7 @@ class WidgetListBuilder extends ConfigEntityListBuilder {
    */
   public function render() {
     $build = parent::render();
+    $build['#title'] = $this->t('Widgets');
     $build['#empty'] = $this->t('No Widget available.');
     return $build;
   }
